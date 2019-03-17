@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:autoMirrored="true" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/walletbg" android:pathData="M15.2,4L8.8,4A4.8,4.8 0,0 0,4 8.8v3.73a4.8,4.8 0,0 0,4.53 4.79v2.22A0.45,0.45 0,0 0,9 20L9,20a0.45,0.45 0,0 0,0.32 -0.13l0.5,-0.5a6.91,6.91 0,0 1,4.92 -2h0.47a4.8,4.8 0,0 0,4.8 -4.8L20.01,8.8A4.8,4.8 0,0 0,15.2 4ZM9.6,10.67A1.07,1.07 0,1 1,8.53 9.6,1.07 1.07,0 0,1 9.6,10.67ZM13.07,10.67A1.07,1.07 0,1 1,12 9.6a1.07,1.07 0,0 1,1.07 1.07ZM15.47,11.74a1.07,1.07 0,1 1,1.07 -1.07A1.07,1.07 0,0 1,15.46 11.73Z"/>
+</vector>

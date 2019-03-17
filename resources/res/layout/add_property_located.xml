@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:id="@+id/back_arrow_property" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/normal_text_color" android:id="@+id/saveAndExit" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/property_location_save_exit"/>
+    </LinearLayout>
+    <TextView android:textSize="30sp" android:textColor="@color/property_heading_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/property_location_text" android:fontFamily="@font/sf_ui_display_regular"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="16dp" android:layout_marginTop="18dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp" android:layout_weight="1">
+        <TextView android:textColor="@color/colorAccent" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/property_location_address" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="16sp" android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/flat_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="16sp" android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/addressLine1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3dp" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="16sp" android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/land_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="15sp" android:textColor="@color/normal_text_color" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/property_location_on_map" android:fontFamily="@font/sf_ui_display_regular"/>
+        <FrameLayout android:id="@+id/map_image_layout" android:layout_width="match_parent" android:layout_height="200dp">
+            <ImageView android:id="@+id/map_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/pf_5dp_space" android:scaleType="fitXY"/>
+            <ImageView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:scaleType="fitXY" app:srcCompat="@drawable/ic_location1"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/map_layout" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginBottom="20dp">
+            <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/pf_5dp_space" android:scaleType="fitXY"/>
+            <ImageView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:scaleType="fitXY" app:srcCompat="@drawable/ic_location1"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:layout_marginBottom="20dp">
+        <TextView android:textSize="12sp" android:textColor="@color/normal_text_color" android:gravity="start" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/property_location_desc" android:fontFamily="@font/sf_ui_display_regular"/>
+        <Button android:textSize="22sp" android:textColor="@color/white" android:id="@+id/add_your_property" android:background="@drawable/button_selected_background" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/property_location_next" android:fontFamily="@font/sf_ui_display_bold" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

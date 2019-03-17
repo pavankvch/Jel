@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="120dp">
+    <ImageView android:id="@+id/other_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/default_logo" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/delete_image" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_cancelation"/>
+    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/image_title" android:background="@drawable/image_text_hint" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:fontFamily="@font/sf_ui_display_regular"/>
+</FrameLayout>

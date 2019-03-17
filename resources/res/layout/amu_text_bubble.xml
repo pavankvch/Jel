@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.jelsat.googlemap.RotationLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.jelsat.customclasses.CustomTextView android:textSize="12sp" android:textColor="@color/normal_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/amu_text" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60000" android:maxLines="1" android:drawablePadding="5dp" android:fontFamily="@font/sf_ui_display_regular" app:drawableRightCompat="@drawable/ic_instant_booking" app:fontFamily="@font/sf_ui_display_regular"/>
+    </com.jelsat.googlemap.RotationLayout>
+</LinearLayout>

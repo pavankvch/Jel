@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginRight="16dp" android:layout_marginBottom="10dp">
+        <TextView android:textSize="24sp" android:textColor="@color/other_room" android:gravity="start" android:id="@+id/radioButtonTxt" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Easy" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewStart"/>
+        <RadioButton android:id="@+id/checked_policy" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/normal_text_color" android:id="@+id/policy_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="This is description" android:lineSpacingExtra="3dp" android:fontFamily="@font/sf_ui_display_regular"/>
+    <View android:background="@color/add_property_steps_line_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="25dp"/>
+</LinearLayout>

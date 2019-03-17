@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:id="@+id/back_arrow_IV" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:id="@+id/saveAndExit" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_and_exit" android:fontFamily="@font/sf_ui_display_regular"/>
+    </LinearLayout>
+    <TextView android:textSize="30sp" android:textColor="@color/property_heading_color" android:gravity="start" android:id="@+id/rooms_guests_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="6dp" android:text="@string/amenities_label" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewStart" android:layout_marginStart="16dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/property_heading_color" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="6dp" android:text="@string/amenities_desc" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewStart" android:layout_marginStart="16dp"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/reviewer_image" android:layout_width="80dp" android:layout_height="80dp" android:layout_margin="10dp" app:srcCompat="@drawable/ic_profile_image_1"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/colorPrimary" android:ellipsize="end" android:gravity="start" android:id="@+id/tv_hostname" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular"/>
+            <TextView android:textColor="@color/editext_line_color" android:ellipsize="end" android:gravity="end" android:id="@+id/tv_reviewdate" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular"/>
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatRatingBar android:id="@+id/review_rating_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="10dp" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="?android:attr/ratingBarStyleSmall"/>
+        <com.jelsat.customclasses.ExpandableTextView android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/tv_review" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="10dp" android:lineSpacingExtra="5dp" android:fontFamily="@font/sf_ui_display_regular" app:DrawableAndTextGravity="2" app:contentTextColor="@color/normal_text_color" app:expandCollapseTextColor="@color/normal_text_color" app:maxCollapsedLines="3"/>
+    </LinearLayout>
+</LinearLayout>

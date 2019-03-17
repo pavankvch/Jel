@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+    <ImageView android:id="@+id/amenityImageview" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="16dp" android:scaleType="fitXY"/>
+    <CheckedTextView android:textSize="16sp" android:textColor="@color/normal_text_color" android:gravity="center" android:id="@+id/checked_TV" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginBottom="13dp" android:checkMark="?android:attr/listChoiceIndicatorMultiple" android:fontFamily="@font/sf_ui_display_regular"/>
+</LinearLayout>

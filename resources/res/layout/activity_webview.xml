@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-7dp" android:indeterminate="true" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:scrollbarFadeDuration="0" android:fadeScrollbars="false" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/back_arrow_IV" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

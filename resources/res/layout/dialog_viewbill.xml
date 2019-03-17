@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/corners" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/curved_corners_top" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/booking_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_regular"/>
+            <TextView android:textSize="14sp" android:textColor="@color/white_with_80_opacity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bill_details" android:fontFamily="@font/sf_ui_display_regular"/>
+        </LinearLayout>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:id="@+id/img_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close_white"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:layout_marginRight="12dp">
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/noOfNightsCalTxt" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.7" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="end" android:id="@+id/price_per_night" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3" android:fontFamily="@font/sf_ui_display_regular"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/serviceFeeTxt" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bill_details_cleaning_fee" android:layout_weight="0.7" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="end" android:id="@+id/serviceFeeAmount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3" android:fontFamily="@font/sf_ui_display_regular"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/tax_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bill_details_tax_and_service_fee" android:layout_weight="0.7" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="end" android:id="@+id/tax_fee_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3" android:fontFamily="@font/sf_ui_display_regular"/>
+    </LinearLayout>
+    <View android:background="@color/booking_status_bg" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_discount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bill_details_discount" android:layout_weight="0.7" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="end" android:id="@+id/discount_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3" android:fontFamily="@font/sf_ui_display_regular"/>
+    </LinearLayout>
+    <View android:id="@+id/discount_view" android:background="@color/booking_status_bg" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/total_amount_TV" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bill_details_total" android:layout_weight="0.7" android:fontFamily="@font/sf_ui_display_medium"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="end" android:id="@+id/total_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3" android:fontFamily="@font/sf_ui_display_medium"/>
+    </LinearLayout>
+</LinearLayout>

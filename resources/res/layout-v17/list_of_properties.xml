@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/listingProperty" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+            <ImageView android:id="@+id/back_arrow_property" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+            <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView android:textSize="30sp" android:textColor="@color/filter_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="5dp" android:layout_marginRight="16sp" android:text="@string/property_type" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="16dp" android:layout_marginEnd="16sp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/filter_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16sp" android:text="@string/property_type_desc" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="16dp" android:layout_marginEnd="16sp"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/property_type_recyclerView" android:padding="10dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_above="@+id/products_list_next" android:layout_below="@+id/listingProperty" android:layout_marginStart="5dp"/>
+    <Button android:enabled="false" android:textSize="22sp" android:textColor="@color/white" android:id="@+id/products_list_next" android:background="@drawable/button_backgound" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="@string/property_type_next" android:layout_alignParentBottom="true" android:fontFamily="@font/sf_ui_display_bold" style="?android:attr/borderlessButtonStyle"/>
+</RelativeLayout>

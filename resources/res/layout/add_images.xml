@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/normal_text_color" android:id="@+id/closeLayout" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="?android:attr/actionBarSize" android:layout_marginRight="8dp" android:text="@string/close" android:layout_alignParentRight="true" android:fontFamily="@font/sf_ui_display_regular"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/upload_linear_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="3dp" android:layout_marginRight="16dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/normal_text_color" android:gravity="end" android:layout_gravity="end" android:id="@+id/images_count" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_regular"/>
+        <ProgressBar android:id="@+id/progressbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pf_5dp_space" android:indeterminate="false" style="?android:attr/progressBarStyleHorizontal"/>
+        <com.jelsat.widgets.FancyButton android:enabled="false" android:textSize="18sp" android:id="@+id/upload_button" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:fb_defaultColor="@color/dialog_save" app:fb_focusColor="#ff838b" app:fb_radius="4dp" app:fb_text="@string/upload_image" app:fb_textColor="@color/white" app:fb_textFont="sf_ui_display_regular.otf"/>
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_above="@+id/upload_linear_layout" android:layout_below="@+id/closeLayout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="6dp">
+                <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="18sp" android:textColor="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/featured_image" android:fontFamily="@font/sf_ui_display_regular"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/featured_descrip" android:lineSpacingExtra="3dp" android:fontFamily="@font/sf_ui_display_regular"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@+id/feature_image" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="12dp" app:srcCompat="@drawable/ic_add_image"/>
+            </LinearLayout>
+            <View android:background="@color/divide_line_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/other_images_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="18sp" android:textColor="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/other_rooms" android:fontFamily="@font/sf_ui_display_regular"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/other_room_desc" android:lineSpacingExtra="3dp" android:fontFamily="@font/sf_ui_display_regular"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@+id/other_image" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="12dp" app:srcCompat="@drawable/ic_add_image"/>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

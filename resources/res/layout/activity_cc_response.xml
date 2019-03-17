@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/responseContainerRL" android:background="@color/pf_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.shamanland.fonticon.FontIconView android:textSize="@dimen/pf_100_txt_size" android:textColor="@android:color/white" android:id="@+id/responseStatusIconIV" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/pf_border_space" android:text="@string/icon_ok_circled" android:layout_centerInParent="true" app:pressedGlowRadius="@dimen/pf_icon_glow_radius"/>
+        <TextView android:textSize="@dimen/pf_20_txt_size" android:textStyle="normal|bold|italic" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@+id/responseStatusHintTV" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/page_border"/>
+        <TextView android:textSize="@dimen/pf_15_txt_size" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@+id/responseInfo1TV" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/page_border"/>
+        <TextView android:textSize="@dimen/pf_15_txt_size" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@+id/responseInfo2TV" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

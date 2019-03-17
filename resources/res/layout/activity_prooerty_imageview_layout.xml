@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/pf_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="end" android:id="@+id/close_image" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close_white"/>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+    <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@+id/property_image_recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:id="@+id/no_of_images_count_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="6dp" android:fontFamily="@font/sf_ui_display_medium" app:fontFamily="@font/sf_ui_display_medium"/>
+        <TextView android:textColor="@color/white" android:id="@+id/image_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_medium"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

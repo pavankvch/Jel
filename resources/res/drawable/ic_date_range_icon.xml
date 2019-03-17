@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:autoMirrored="true" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/normal_text_color" android:pathData="M20.334,3.875L17.625,3.875L17.625,2.625a0.625,0.625 0,0 0,-1.25 0v1.25h-3.75L12.625,2.625a0.625,0.625 0,0 0,-1.25 0v1.25L7.625,3.875L7.625,2.625a0.625,0.625 0,0 0,-1.25 0v1.25L3.667,3.875A1.666,1.666 0,0 0,2 5.541L2,20.333A1.667,1.667 0,0 0,3.667 22L20.334,22A1.666,1.666 0,0 0,22 20.333L22,5.541A1.666,1.666 0,0 0,20.334 3.875ZM20.75,20.333a0.417,0.417 0,0 1,-0.416 0.417L3.667,20.75a0.417,0.417 0,0 1,-0.417 -0.417L3.25,5.541a0.417,0.417 0,0 1,0.417 -0.416L6.375,5.125v1.25a0.625,0.625 0,0 0,1.25 0L7.625,5.125h3.75v1.25a0.625,0.625 0,0 0,1.25 0L12.625,5.125h3.75v1.25a0.625,0.625 0,0 0,1.25 0L17.625,5.125h2.709a0.417,0.417 0,0 1,0.416 0.416Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M6.375,12.625h2.5v1.875h-2.5z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M6.375,15.75h2.5v1.875h-2.5z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M10.75,15.75h2.5v1.875h-2.5z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M10.75,12.625h2.5v1.875h-2.5z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M10.75,9.5h2.5v1.875h-2.5z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M15.125,12.625h2.5v1.875h-2.5z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M15.125,9.5h2.5v1.875h-2.5z"/>
+</vector>

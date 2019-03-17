@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="150dp" android:scaleType="fitXY" app:srcCompat="@drawable/ic_illustration"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="120dp" android:layout_height="140dp" android:src="@drawable/splash_screen_new_logo"/>
+        <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+        <com.jelsat.widgets.FancyButton android:textSize="18sp" android:id="@+id/retry_button" android:paddingLeft="24dp" android:paddingTop="10dp" android:paddingRight="24dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp" app:fb_borderColor="#ffffff" app:fb_borderWidth="1dp" app:fb_defaultColor="@color/app_background" app:fb_focusColor="#ff838b" app:fb_radius="4dp" app:fb_text="@string/retry" app:fb_textColor="@color/white" app:fb_textFont="sf_ui_display_regular.otf"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="100dp" android:layout_height="280dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_app_logo_half"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+            <TextView android:textSize="18sp" android:textColor="@color/normal_text_color" android:id="@+id/skip_tv" android:paddingLeft="24dp" android:paddingTop="6dp" android:paddingRight="24dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intro_skip_label" android:fontFamily="@font/sf_ui_display_regular" android:paddingStart="24dp" android:paddingEnd="24dp"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="18sp" android:textColor="@color/app_background" android:id="@+id/user_signin_tv" android:padding="4dp" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="center" android:paddingStart="24dp" android:paddingEnd="24dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/background_login" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/white_with_80_opacity" android:id="@+id/click_support_mail" android:padding="4dp" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/support" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="center" android:paddingStart="24dp" android:paddingEnd="24dp"/>
+            <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/white_with_80_opacity" android:gravity="center" android:id="@+id/language_view" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginEnd="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/social_buttons_layout" android:background="@color/background_login" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/facebook_button" android:paddingLeft="40dp" android:paddingTop="12dp" android:paddingRight="40dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/home_facebook_label" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular" android:paddingStart="40dp" android:paddingEnd="40dp"/>
+                <View android:background="@color/white_with_15_opacity" android:layout_width="1dp" android:layout_height="match_parent"/>
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/google_button" android:paddingLeft="45dp" android:paddingTop="12dp" android:paddingRight="45dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/home_google_label" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular" android:paddingStart="45dp" android:paddingEnd="45dp"/>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center" android:id="@+id/user_login_fragment_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="12dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

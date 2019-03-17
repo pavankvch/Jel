@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_home_selected" android:id="@+id/dash_board_home" android:checked="true" android:title="@string/dashboard_home"/>
+    <item android:icon="@drawable/ic_saved_selection" android:id="@+id/dash_board_saved" android:title="@string/dashboard_saved"/>
+    <item android:icon="@drawable/ic_bookings_selected" android:id="@+id/dash_board_bookings" android:title="@string/dashboard_bookings"/>
+    <item android:icon="@drawable/ic_inbox_selected" android:id="@+id/dash_board_inbox" android:title="@string/dashboard_inbox"/>
+    <item android:icon="@drawable/ic_profile_selected" android:id="@+id/dash_board_profile" android:title="@string/dashboard_profile"/>
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:id="@+id/back_arrow_IV" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="4dp" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.jelsat.widgets.FancyButton android:textSize="14sp" android:id="@+id/un_publish_property" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fb_defaultColor="@color/white" app:fb_iconPaddingLeft="-4dp" app:fb_iconPaddingRight="-4dp" app:fb_iconPosition="1" app:fb_iconResource="@drawable/ic_unpublish" app:fb_text="@string/add_your_property_unpublish_property_label" app:fb_textColor="@color/no_background_color"/>
+    </LinearLayout>
+    <TextView android:textSize="30sp" android:textColor="@color/property_heading_color" android:gravity="start" android:id="@+id/add_your_property_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:text="@string/add_your_property_label" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewStart" android:layout_marginStart="32dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:textAlignment="viewStart" android:layout_marginStart="32dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/basic_info_step_one_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="25sp" android:textColor="@color/normal_text_color" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/add_your_property_basic_info_label" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewStart"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/light_text_color" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_your_property_basic_info_summary_label" android:textAlignment="viewStart"/>
+                </LinearLayout>
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="12dp" app:srcCompat="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+            <View android:background="@color/add_property_steps_line_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/description_property_step_two_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="25sp" android:textColor="@color/normal_text_color" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/add_your_property_description_of_property_label" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewStart"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/light_text_color" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_your_property_description_of_property_summary_label" android:textAlignment="viewStart"/>
+                </LinearLayout>
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="12dp" app:srcCompat="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+            <View android:background="@color/add_property_steps_line_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/price_setting_step_three_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="25sp" android:textColor="@color/normal_text_color" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/add_your_property_price_setting_label" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewStart"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/light_text_color" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_your_property_price_setting_summary_label" android:textAlignment="viewStart"/>
+                </LinearLayout>
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="12dp" app:srcCompat="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_illustrator"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/layout_header" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+    <ImageView android:id="@+id/back_arrow_IV" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="?android:attr/actionBarSize" app:srcCompat="@drawable/ic_arrow_back_white_24px"/>
+    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/img_profile" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:src="@drawable/default_logo"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/tv_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:fontFamily="@font/sf_ui_display_medium" android:layout_marginStart="6dp"/>
+    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <ImageButton android:id="@+id/phone_call" android:background="@color/transparent" android:visibility="invisible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:src="@android:drawable/stat_sys_phone_call" android:layout_marginEnd="5dp"/>
+    <TextView android:textColor="@color/white" android:id="@+id/tv_close" android:padding="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" android:fontFamily="@font/sf_ui_display_medium"/>
+</LinearLayout>

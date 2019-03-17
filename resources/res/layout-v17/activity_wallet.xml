@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/swipeContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textSize="20sp" android:textColor="@color/green" android:id="@+id/btn_payment_history" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wallet_payment_history" android:layout_alignParentBottom="true" android:textAllCaps="false" android:fontFamily="@font/sf_ui_display_regular"/>
+        <android.support.v4.widget.NestedScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_payment_history">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/back_arrow_IV" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" app:srcCompat="@drawable/ic_wallet_big"/>
+                <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="@color/property_checkbox_color" android:layout_gravity="center_horizontal" android:id="@+id/tv_total_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:fontFamily="@font/sf_ui_display_semibold"/>
+                <View android:background="@color/yes_background_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+                    <TextView android:textColor="@color/normal_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_balance_label" android:fontFamily="@font/sf_ui_display_regular"/>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/normal_text_color" android:id="@+id/tv_promoamount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_regular"/>
+                </LinearLayout>
+                <TextView android:textColor="@color/on_map_button" android:layout_gravity="end" android:id="@+id/tv_expiration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_marginEnd="10dp"/>
+                <View android:background="@color/yes_background_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+                    <TextView android:textColor="@color/property_checkbox_color" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_cancelation_balance_label" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewStart"/>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/normal_text_color" android:gravity="end" android:id="@+id/tv_refundamount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_regular" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <com.jelsat.widgets.FancyButton android:textSize="12sp" android:layout_gravity="end" android:id="@+id/btn_refund" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="8dp" android:layout_marginEnd="10dp" app:fb_defaultColor="@color/property_instant_color" app:fb_radius="15dp" app:fb_text="@string/wallet_transfer" app:fb_textColor="@color/white"/>
+                <View android:background="@color/yes_background_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <TextView android:textColor="@color/property_checkbox_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="8dp" android:text="@string/wallet_saved_cards_label" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                <android.support.v7.widget.RecyclerView android:id="@+id/cards_recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/wallet_payment_options" android:fontFamily="@font/sf_ui_display_regular"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

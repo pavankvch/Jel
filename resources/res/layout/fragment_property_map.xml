@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/property_map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="35dp"/>
+    <ImageView android:id="@+id/back_arrow_IV" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+    <TextView android:textSize="13sp" android:textColor="@color/normal_text_color" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/address_apperence_textview" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/map_complete_address"/>
+</FrameLayout>

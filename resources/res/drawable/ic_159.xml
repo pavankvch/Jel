@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="30dp" android:width="30dp" android:viewportWidth="30" android:viewportHeight="30">
+    <path android:fillColor="@color/normal_text_color" android:pathData="M23.3,2 L23.3,2 L23.3,27.27 L6.68,27.27 L6.7,2 L23.3,2 M23.3,1 L6.7,1 A1,1,0,0,0,5.7,2 L5.7,27.27 A1,1,0,0,0,6.7,28.27 L23.3,28.27 A1,1,0,0,0,24.3,27.27 L24.3,2 A1,1,0,0,0,23.3,1 Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M7.52,5.67 L12.49,5.67 L12.49,6.67 L7.52,6.67 L7.52,5.67 Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M7.52,13.16 L12.49,13.16 L12.49,14.16 L7.52,14.16 L7.52,13.16 Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M5.88,9.41 L24.29,9.41 L24.29,10.41 L5.88,10.41 L5.88,9.41 Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M21.79,29 L19.73,29 A0.2,0.2,0,0,1,19.53,28.8 L19.53,27.66 L22,27.66 L22,28.8 A0.2,0.2,0,0,1,21.79,29 Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M10.27,29 L8.21,29 A0.2,0.2,0,0,1,8.01,28.8 L8.01,27.66 L10.47,27.66 L10.47,28.8 A0.2,0.2,0,0,1,10.27,29 Z"/>
+</vector>

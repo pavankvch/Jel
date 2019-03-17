@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/property_map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/regular_booking_status" android:layout_gravity="center" android:id="@+id/no_result_textView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:text="@string/no_resu_found" android:fontFamily="@font/sf_ui_display_regular"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/map_property_recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginBottom="10dp" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.v7.widget.CardView android:layout_width="151dp" android:layout_height="189dp" android:layout_marginTop="6dp" app:cardCornerRadius="3dp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/property_IV" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" app:srcCompat="@drawable/default_logo_dashboard"/>
+            <FrameLayout android:background="@drawable/property_price_tag_backgound" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:layout_gravity="bottom" android:background="@color/transparent_image_color_60_opacity" android:paddingLeft="2dp" android:paddingTop="4dp" android:paddingRight="0dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="start" android:id="@+id/rate_TV" android:paddingLeft="@dimen/pf_5dp_space" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/sf_ui_display_medium"/>
+            </FrameLayout>
+            <ImageView android:layout_gravity="end" android:id="@+id/favorite_IV" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_favourite"/>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+    <TextView android:textSize="16sp" android:textColor="@color/app_background" android:ellipsize="end" android:gravity="start" android:id="@+id/property_name_TV" android:paddingLeft="@dimen/pf_5dp_space" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="1" android:fontFamily="@font/sf_ui_display_medium"/>
+</merge>

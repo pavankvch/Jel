@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/swipeContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" layout="@layout/custom_toolbar"/>
+        <android.support.design.widget.TabLayout android:id="@+id/tabs" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="0" app:tabIndicatorHeight="0dp" app:tabMaxWidth="0dp" app:tabMode="1" app:tabSelectedTextColor="@color/white" app:tabTextColor="@color/transparent_image_color_40_percent"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.jelsat.widgets.NonSwipeableViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/no_result_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/no_result_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_nointernet"/>
+                <TextView android:textColor="@color/normal_text_color" android:id="@+id/no_result_textView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp" android:text="@string/error_message_network" android:fontFamily="@font/sf_ui_display_regular"/>
+                <com.jelsat.widgets.FancyButton android:textSize="18sp" android:id="@+id/retry_button" android:paddingLeft="24dp" android:paddingTop="10dp" android:paddingRight="24dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp" app:fb_borderColor="#ffffff" app:fb_borderWidth="1dp" app:fb_defaultColor="@color/app_background" app:fb_focusColor="#ff838b" app:fb_radius="4dp" app:fb_text="Retry" app:fb_textColor="@color/white" app:fb_textFont="sf_ui_display_regular.otf"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

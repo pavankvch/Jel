@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/search_property_layout" android:background="@drawable/background_search_property" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:layout_marginBottom="5dp">
+    <android.support.v7.widget.CardView android:id="@+id/property_cardView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pf_10dp_space" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/property_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" app:srcCompat="@drawable/default_logo"/>
+            <FrameLayout android:background="@drawable/property_price_tag_backgound" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="end" android:id="@+id/favourite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" app:srcCompat="@drawable/ic_favourite"/>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="5dp"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="8dp">
+        <com.jelsat.customclasses.CustomTextView android:textSize="13sp" android:textColor="@color/search_property_name" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="bottom" android:id="@+id/property_name_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="2" android:singleLine="false" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_medium" app:fontFamily="@font/sf_ui_display_medium"/>
+        <android.support.v4.widget.Space android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textColor="@color/search_property_type" android:gravity="bottom|right|center_vertical|center_horizontal|center|end" android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/propertyType" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular"/>
+    </LinearLayout>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="4dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="8dp">
+        <com.jelsat.customclasses.CustomTextView android:textSize="13sp" android:textColor="@color/search_property_text" android:gravity="center" android:layout_gravity="top" android:id="@+id/distance_TV" android:layout_width="wrap_content" android:layout_height="18dp" android:layout_marginLeft="3dp" android:maxLines="2" android:fontFamily="@font/sf_ui_display_regular" app:drawableLeftCompat="@drawable/ic_location_search_screen" app:fontFamily="@font/sf_ui_display_regular"/>
+        <android.support.v4.widget.Space android:layout_width="275dp" android:layout_height="18dp" android:layout_weight="1"/>
+        <com.jelsat.customclasses.CustomTextView android:textSize="13sp" android:textColor="@color/search_property_text" android:gravity="center" android:layout_gravity="top" android:id="@+id/property_book_type" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="" android:drawablePadding="2dp" app:drawableLeftCompat="@drawable/ic_instant_booking"/>
+    </LinearLayout>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="6dp"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/price_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+        <TextView android:textSize="13sp" android:textColor="@color/app_background" android:gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/price_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5"/>
+        <LinearLayout android:gravity="bottom|right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:id="@+id/app_rating_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13sp" android:textColor="@color/search_property_text" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/property_reviews" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dont_have_enough_rating_new"/>
+            <android.support.v7.widget.AppCompatRatingBar android:theme="@style/RatingBar" android:layout_gravity="center_vertical" android:id="@+id/property_rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" android:scaleX="0.8" android:scaleY="0.8" style="?android:attr/ratingBarStyleSmall"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="2dp"/>
+    <View android:id="@+id/property_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

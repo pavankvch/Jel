@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipeContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/custom_toolbar"/>
+        <RelativeLayout android:id="@+id/layout_total_count" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_below="@+id/toolbar">
+            <TextView android:textSize="18sp" android:textColor="@color/property_text_color" android:id="@+id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:fontFamily="@font/sf_ui_display_medium" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="18sp" android:textColor="@color/invite_link_color" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_toLeftOf="@+id/tv_count" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="@font/sf_ui_display_medium" android:layout_toStartOf="@+id/tv_count" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/norecordsTv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_records_found" android:layout_centerInParent="true" android:fontFamily="@font/sf_ui_display_regular"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_total_count"/>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

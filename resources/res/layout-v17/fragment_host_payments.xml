@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_header" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_amount" android:background="@color/app_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginBottom="50dp">
+            <TextView android:textColor="@color/white" android:id="@+id/label_totalearnings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/host_payments_total_earnings" android:layout_centerHorizontal="true" android:fontFamily="@font/sf_ui_display_regular"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/label_totalearnings" android:layout_centerHorizontal="true">
+                <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/currency_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/host_payments_price_type" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginEnd="10dp"/>
+                <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/tv_total_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:weightSum="3">
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_properties" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/host_payments_properties" android:fontFamily="@font/sf_ui_display_regular"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" app:srcCompat="@drawable/ic_properties"/>
+                    <TextView android:textColor="@color/white" android:id="@+id/tv_properties_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_semibold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/view_totalbookings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_bookings_heading" android:fontFamily="@font/sf_ui_display_regular"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" app:srcCompat="@drawable/ic_total_bookings_ap"/>
+                    <TextView android:textColor="@color/white" android:id="@+id/tv_total_bookings_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_semibold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_cancelled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/host_payments_total_cancellations" android:fontFamily="@font/sf_ui_display_regular"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" app:srcCompat="@drawable/ic_total_cancelations"/>
+                    <TextView android:textColor="@color/white" android:id="@+id/tv_total_cancells" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_semibold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/layout_options" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_header">
+        <ImageView android:id="@+id/img_calender" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_calander"/>
+        <android.support.design.widget.TabLayout android:id="@+id/tabs_payment_categories" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/img_calender" android:layout_alignParentLeft="true" android:layout_toStartOf="@+id/img_calender" android:layout_alignParentStart="true" app:tabGravity="0" app:tabIndicatorHeight="0dp" app:tabMode="1" app:tabSelectedTextColor="@color/app_background" app:tabTextColor="@color/host_payments_tab_color"/>
+        <View android:background="@color/line_diver_payment_tab" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/tabs_payment_categories"/>
+    </RelativeLayout>
+    <com.jelsat.widgets.NonSwipeableViewPager android:id="@+id/viewpager" android:background="@color/booking_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layout_options"/>
+</RelativeLayout>

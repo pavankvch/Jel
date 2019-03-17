@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="30" android:viewportHeight="30">
+    <path android:fillColor="@color/normal_text_color" android:pathData="M27.1,4.57H25.37c0,-2 -1.14,-3.57 -2.58,-3.57H7.21C5.77,1 4.64,2.57 4.63,4.57H2.9a1,1 0,0 0,-1 1V26a1,1 0,0 0,1 1h0.89v1.69a0.34,0.34 0,0 0,0.34 0.34H25.87a0.34,0.34 0,0 0,0.34 -0.34V27h0.89a1,1 0,0 0,1 -1V5.55A1,1 0,0 0,27.1 4.57ZM25.25,28H4.75V27h20.5ZM24.39,4.57h-8.9V2h7.3C23.67,2 24.38,3.14 24.39,4.57ZM7.21,2h7.3V4.57H5.61C5.62,3.14 6.33,2 7.21,2ZM4.63,5.55H27.1v4.74H2.9V5.55ZM2.9,26V11.27H27.1V26Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M22.16,12.88L7.84,12.88a2.71,2.71 0,0 0,-2.71 2.71v6A2.71,2.71 0,0 0,7.84 24.3L22.16,24.3a2.71,2.71 0,0 0,2.71 -2.71v-6A2.71,2.71 0,0 0,22.16 12.88ZM7.83,13.88L22.16,13.88a1.73,1.73 0,0 1,1.73 1.73v0.25L6.1,15.86v-0.25A1.73,1.73 0,0 1,7.84 13.86ZM23.89,16.88v3.53L6.1,20.41L6.1,16.83ZM22.16,23.38L7.84,23.38A1.73,1.73 0,0 1,6.1 21.59v-0.25L23.9,21.34v0.25A1.73,1.73 0,0 1,22.16 23.32Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M7.24,8.78a1,1 0,1 0,-1 -1A1,1 0,0 0,7.24 8.78Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M12.41,8.78a1,1 0,1 0,-1 -1A1,1 0,0 0,12.41 8.78Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M17.59,8.78a1,1 0,1 0,-1 -1A1,1 0,0 0,17.59 8.78Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M22.76,8.78a1,1 0,1 0,-1 -1A1,1 0,0 0,22.76 8.78Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M12.2,3H8.46a0.38,0.38 0,0 0,0 0.76H12.2a0.38,0.38 0,0 0,0 -0.76Z"/>
+    <path android:fillColor="@color/normal_text_color" android:pathData="M17.8,3.77h3.74a0.38,0.38 0,0 0,0 -0.76H17.8a0.38,0.38 0,0 0,0 0.76Z"/>
+</vector>

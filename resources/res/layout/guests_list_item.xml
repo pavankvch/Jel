@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="18sp" android:textColor="@color/normal_text_color" android:gravity="center" android:id="@+id/guest_count_TV" android:padding="1dp" android:layout_width="35dp" android:layout_height="35dp" android:fontFamily="@font/sf_ui_display_regular"/>

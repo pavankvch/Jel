@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dashboard_tabs">
+        <item>@string/dashboard_home</item>
+        <item>@string/dashboard_saved</item>
+        <item>@string/dashboard_bookings</item>
+        <item>@string/dashboard_inbox</item>
+        <item>@string/dashboard_profile</item>
+    </array>
+    <array name="host_tabs">
+        <item>@string/dashboard_bookings</item>
+        <item>@string/dashboard_inbox</item>
+        <item>@string/dashboard_listing</item>
+        <item>@string/dashboard_payments</item>
+        <item>@string/dashboard_profile</item>
+    </array>
+</resources>

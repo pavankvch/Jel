@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/category" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/sf_ui_display_medium"/>
+        <TextView android:textSize="12sp" android:textColor="#411c1c1c" android:gravity="center" android:id="@+id/noteText" android:padding="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_section_nothing_to_show"/>
+        <TextView android:textSize="12sp" android:textColor="@color/normal_text_color" android:gravity="end" android:id="@+id/moreOption" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dashboard_home_view_all_label" android:textAllCaps="true" android:fontFamily="@font/sf_ui_display_semibold"/>
+    </LinearLayout>
+    <View android:background="@color/yes_background_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

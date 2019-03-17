@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/search_head" layout="@layout/date_guest_property_layout"/>
+    <FrameLayout android:id="@+id/search_fragment_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@color/dash_board_bg_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.jelsat.customclasses.CustomTextView android:textSize="12sp" android:textColor="@color/light_text_color" android:gravity="center" android:id="@+id/bottom_saved" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_bottom_layout_saved" android:drawablePadding="4dp" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular" app:drawableTopCompat="@drawable/ic_saved_grey" app:fontFamily="@font/sf_ui_display_medium"/>
+        <com.jelsat.customclasses.CustomTextView android:textSize="12sp" android:textColor="@color/light_text_color" android:gravity="center" android:id="@+id/bottom_sort" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_bottom_layout_sort" android:drawablePadding="4dp" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular" app:drawableTopCompat="@drawable/ic_sort" app:fontFamily="@font/sf_ui_display_medium"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/bottom_filter" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4dp" android:layout_weight="1">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/fragment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_filter"/>
+                <TextView android:textColor="@color/app_background" android:gravity="center" android:layout_gravity="end" android:id="@+id/fragment_count" android:background="@drawable/fiter_icon_badge" android:visibility="visible" android:layout_width="5dp" android:layout_height="5dp"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:layout_gravity="center" android:id="@+id/fragment_title" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_bottom_layout_filter" android:textAllCaps="true" android:fontFamily="@font/sf_ui_display_medium"/>
+        </LinearLayout>
+        <com.jelsat.customclasses.CustomTextView android:textSize="12sp" android:textColor="@color/light_text_color" android:gravity="center" android:id="@+id/bottom_map" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_bottom_layout_map" android:drawablePadding="4dp" android:layout_weight="1" android:fontFamily="@font/sf_ui_display_regular" app:drawableTopCompat="@drawable/ic_map_view" app:fontFamily="@font/sf_ui_display_medium"/>
+    </LinearLayout>
+</LinearLayout>

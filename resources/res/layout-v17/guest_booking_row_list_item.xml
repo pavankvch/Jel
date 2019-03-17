@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/booking_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="6dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+        <TextView android:textSize="13sp" android:textColor="@color/normal_text_color" android:id="@+id/tv_property_booked_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_regular"/>
+        <TextView android:textSize="13sp" android:textColor="@color/normal_text_color" android:id="@+id/tv_property_booked_date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_regular"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textColor="@color/normal_text_color" android:ellipsize="end" android:id="@+id/tv_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/sf_ui_display_regular"/>
+    </LinearLayout>
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="2dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" android:baselineAligned="false">
+                <ImageView android:id="@+id/img_property" android:layout_width="80dp" android:layout_height="80dp" android:scaleType="fitXY" app:srcCompat="@drawable/default_logo_small"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginStart="8dp">
+                    <TextView android:textSize="13sp" android:textColor="@color/colorPrimary" android:ellipsize="end" android:gravity="start" android:id="@+id/tv_property_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp" android:maxLines="1" android:fontFamily="@font/sf_ui_display_medium" android:textAlignment="viewStart"/>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="13sp" android:textColor="@color/normal_text_color" android:id="@+id/property_check_in_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_medium"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/normal_text_color" android:layout_gravity="center" android:id="@+id/start_week_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_medium"/>
+                        </LinearLayout>
+                        <com.jelsat.widgets.FancyButton android:textSize="9sp" android:id="@+id/tv_nights_numbers" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:fb_borderColor="@color/bookings_propertyname_color" app:fb_borderWidth="0.5dp" app:fb_defaultColor="@color/white" app:fb_radius="2dp" app:fb_text="2N" app:fb_textAllCaps="true" app:fb_textColor="@color/normal_text_color" app:fb_textFont="sf_ui_display_medium.otf" app:fb_textSize="9sp"/>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="13sp" android:textColor="@color/normal_text_color" android:id="@+id/property_check_out_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_medium"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/normal_text_color" android:layout_gravity="center" android:id="@+id/end_week_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_medium"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.jelsat.customclasses.CustomTextView android:textSize="12sp" android:textColor="@color/normal_text_color" android:gravity="center" android:id="@+id/tv_property_booking_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4dp" android:fontFamily="@font/sf_ui_display_regular" app:drawableLeftCompat="@drawable/ic_24hours_booking" app:fontFamily="@font/sf_ui_display_regular"/>
+                        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <com.jelsat.widgets.FancyButton android:textSize="12sp" android:textColor="@color/normal_text_color" android:gravity="center" android:id="@+id/tv_property_booking_status" android:padding="4dp" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_ui_display_bold" android:paddingStart="10dp" android:paddingEnd="10dp" app:fb_defaultColor="@color/booking_status_bg" app:fb_radius="20dp" app:fb_text="waiting for approval" app:fb_textColor="@color/normal_text_color" app:fb_textFont="sf_ui_display_bold.otf" app:fb_textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/choose_location_line_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_previous" android:paddingTop="6dp" android:paddingBottom="6dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <ImageView android:id="@+id/Iv_book_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/ic_book_again"/>
+                <ImageView android:id="@+id/Iv_view_bill_preivous" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/ic_view_bill"/>
+                <ImageView android:id="@+id/Iv_feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/ic_bookings_feedback"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_action" android:paddingTop="6dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <ImageView android:id="@+id/Iv_get_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/ic_location"/>
+                <ImageView android:id="@+id/Iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/ic_bookings_cancel"/>
+                <ImageView android:id="@+id/Iv_view_bill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/ic_view_bill"/>
+                <ImageView android:id="@+id/Iv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/ic_booking_message"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:autoMirrored="true" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/walletbg" android:pathData="M7.63,19.4a0.64,0.64 0,0 0,0.23 0,0.57 0.57,0 0,0 0.4,-0.16l3.23,-3.09h6.09A2.42,2.42 0,0 0,20 13.78V7a2.42,2.42 0,0 0,-2.42 -2.42H6.42A2.42,2.42 0,0 0,4 7v6.81A2.42,2.42 0,0 0,6.42 16.2h0.86v2.67A0.57,0.57 0,0 0,7.63 19.4Z"/>
+    <path android:fillColor="#ffffff" android:pathData="M7.68,9.43H16a0.58,0.58 0,0 0,0 -1.16H7.68a0.58,0.58 0,1 0,0 1.16Z"/>
+    <path android:fillColor="#ffffff" android:pathData="M16.59,12a0.58,0.58 0,0 0,-0.57 -0.58H7.68a0.58,0.58 0,1 0,0 1.16H16a0.58,0.58 0,0 0,0.58 -0.57Z"/>
+</vector>

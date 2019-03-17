@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jelsat.customclasses.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="13sp" android:textColor="@color/normal_text_color" android:id="@+id/property_component" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:drawablePadding="12dp" app:drawableTopCompat="@drawable/ic_rooms"/>

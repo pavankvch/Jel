@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.jelsat.compoundviews.ProfileCompoundView android:id="@+id/wallet_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:textViewLeftDrawable="@drawable/ic_wallet" app:titleText="@string/profile_guest_wallet"/>
+    <com.jelsat.compoundviews.ProfileCompoundView android:id="@+id/settings_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:textViewLeftDrawable="@drawable/ic_settings" app:titleText="@string/profile_guest_settings"/>
+    <com.jelsat.compoundviews.ProfileCompoundView android:id="@+id/feedback_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:textViewLeftDrawable="@drawable/ic_feedback" app:titleText="@string/profile_guest_feedback"/>
+    <com.jelsat.compoundviews.ProfileCompoundView android:id="@+id/help_view_guest" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:textViewLeftDrawable="@drawable/ic_faqs" app:titleText="@string/profile_guest_help"/>
+    <com.jelsat.compoundviews.ProfileCompoundView android:id="@+id/invite_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:textViewLeftDrawable="@drawable/ic_invite" app:titleText="@string/profile_guest_invite"/>
+</LinearLayout>

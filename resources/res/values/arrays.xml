@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="booking_settings_BookingType">
+        <item>@string/select_booking_type</item>
+        <item>@string/total_earnings_booking_type_instant</item>
+        <item>@string/booking_24hours</item>
+    </array>
+    <array name="dashboard_tabs">
+        <item>@string/dashboard_home</item>
+        <item>@string/dashboard_saved</item>
+        <item>@string/dashboard_bookings</item>
+        <item>@string/dashboard_inbox</item>
+        <item>@string/dashboard_profile</item>
+    </array>
+    <array name="host_tabs">
+        <item>@string/dashboard_bookings</item>
+        <item>@string/dashboard_inbox</item>
+        <item>@string/dashboard_listing</item>
+        <item>@string/dashboard_payments</item>
+        <item>@string/dashboard_profile</item>
+    </array>
+</resources>

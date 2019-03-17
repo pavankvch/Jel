@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_card_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" app:cardCornerRadius="4dp" app:cardElevation="0dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/list_item_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/card_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" app:srcCompat="@drawable/ic_mastercard"/>
+            <TextView android:textColor="@color/normal_text_color" android:gravity="start" android:id="@+id/card_number_TV" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/transparent_layout" android:background="@color/transparent_image_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</android.support.v7.widget.CardView>

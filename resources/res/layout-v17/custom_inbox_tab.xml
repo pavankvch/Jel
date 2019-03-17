@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/fragment_icon" android:padding="6dp" android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_messages_unselect"/>
+        <TextView android:textSize="8sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end" android:id="@+id/fragment_count" android:background="@drawable/inbox_notification_circle" android:layout_width="18dp" android:layout_height="18dp"/>
+    </FrameLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/transparent_image_color_40_percent" android:layout_gravity="center" android:id="@+id/fragment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:textAllCaps="true" android:fontFamily="@font/sf_ui_display_semibold" android:layout_marginEnd="6dp"/>
+</LinearLayout>

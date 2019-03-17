@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:id="@+id/back_dialog" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/resend_color" android:id="@+id/dialog_cancel" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_image_cancel"/>
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="0.5"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/other_imageview" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/default_logo" android:scaleType="fitXY" android:layout_weight="1"/>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="0.5"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent_image_color" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textColor="@color/white" android:textColorHint="#bcb3b4" android:id="@+id/other_title_dialog" android:background="@color/transparent" android:paddingLeft="10dp" android:paddingRight="@dimen/pf_5dp_space" android:layout_width="0dp" android:layout_height="50dp" android:hint="@string/name_of_the_image" android:maxLines="1" android:maxLength="50" android:layout_weight="1" android:inputType="text" android:fontFamily="@font/sf_ui_display_regular"/>
+        <View android:layout_gravity="center_vertical" android:background="@color/white_with_60_opacity" android:layout_width="0.5dp" android:layout_height="30dp"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/add_item" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginLeft="5dp" android:text="@string/button_add" android:layout_weight="0.25" android:fontFamily="@font/sf_ui_display_regular"/>
+    </LinearLayout>
+</LinearLayout>

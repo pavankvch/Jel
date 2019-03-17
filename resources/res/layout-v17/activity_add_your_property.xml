@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:id="@+id/back_arrow_property" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+        <android.support.v4.widget.Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/normal_text_color" android:id="@+id/saveAndExit" android:padding="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="@string/rooms_guests_save_and_exit" android:layout_marginEnd="4dp"/>
+    </LinearLayout>
+    <TextView android:textSize="30sp" android:textColor="@color/property_heading_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/rooms_guests" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="16dp"/>
+    <TextView android:textSize="15sp" android:textColor="@color/filter_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="5dp" android:text="@string/rooms_guests_desc" android:lineSpacingExtra="3dp" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <android.support.v4.widget.NestedScrollView android:id="@+id/property_detail_scrollView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="16dp" android:layout_marginStart="6dp" android:layout_marginEnd="16dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/roomLay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textColor="@color/colorAccent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:text="@string/no_of_rooms" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="10dp"/>
+                <Spinner android:id="@+id/noOfRooms" android:background="@null" android:layout_width="match_parent" android:layout_height="28dp" android:fadeScrollbars="false" android:spinnerMode="dropdown"/>
+                <View android:background="@color/edit_text_hint_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/tentLay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:text="@string/no_of_tents" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="10dp"/>
+                <Spinner android:id="@+id/noOfTents" android:background="@null" android:layout_width="match_parent" android:layout_height="28dp" android:fadeScrollbars="false" android:spinnerMode="dropdown"/>
+                <View android:background="@color/edit_text_hint_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/bedRoomLay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:text="@string/no_of_beds" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="10dp"/>
+                <Spinner android:id="@+id/noOfBeds" android:background="@null" android:layout_width="match_parent" android:layout_height="28dp" android:fadeScrollbars="false" android:spinnerMode="dropdown"/>
+                <View android:background="@color/edit_text_hint_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/doublebedLay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:id="@+id/double_beds_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="50dp" android:text="@string/no_of_doublebeds" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="10dp"/>
+                <Spinner android:id="@+id/noOfDoubleBeds" android:background="@null" android:layout_width="match_parent" android:layout_height="28dp" android:fadeScrollbars="false" android:spinnerMode="dropdown"/>
+                <View android:background="@color/edit_text_hint_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/singlebedLay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:id="@+id/single_beds_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="50dp" android:text="@string/no_of_singlebeds" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="10dp"/>
+                <Spinner android:id="@+id/noOfSingleBeds" android:background="@null" android:layout_width="match_parent" android:layout_height="28dp" android:fadeScrollbars="false" android:spinnerMode="dropdown"/>
+                <View android:background="@color/edit_text_hint_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/bathroomLay" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="50dp" android:text="@string/no_of_bathrooms" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="10dp"/>
+                <Spinner android:id="@+id/noOfBathrooms" android:background="@null" android:layout_width="match_parent" android:layout_height="28dp" android:fadeScrollbars="false" android:spinnerMode="dropdown"/>
+                <View android:background="@color/edit_text_hint_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                <TextView android:textColor="@color/colorAccent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="50dp" android:text="@string/max_no_of_guests" android:fontFamily="@font/sf_ui_display_regular" android:layout_marginStart="10dp"/>
+                <EditText android:id="@+id/noOfPersons" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp" android:hint="@string/plz_enter_max_no_of_guests" android:maxLines="1" android:maxLength="5" android:inputType="number" android:fontFamily="@font/sf_ui_display_regular"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/guestsLay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Spinner android:id="@+id/noOfPersonsSpinner" android:background="@null" android:layout_width="match_parent" android:layout_height="28dp" android:fadeScrollbars="false" android:spinnerMode="dropdown"/>
+                    <View android:background="@color/edit_text_hint_color" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <Button android:enabled="false" android:textSize="22sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/add_your_property" android:background="@drawable/button_backgound" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="@string/rooms_guests_next" android:fontFamily="@font/sf_ui_display_bold" style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>
